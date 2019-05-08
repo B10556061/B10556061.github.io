@@ -1,0 +1,54 @@
+body {
+    background-color: #f0eeee;
+    /*background-image: url(https://i.imgur.com/e5JV6xm.gif);
+    background-size: 100%;*/
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: gray;
+    /*opacity: 0.7;*/
+    text-align: center;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+li {
+    text-align: center;
+    width: 200px;
+    list-style: none;
+    line-height: 4em;
+    font-weight: bolder;
+    display: inline-block;
+    margin: auto;
+    font-size: 20px;
+}
+
+a:link {
+    color: white;
+}
+
+a:hover {
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+a:active {
+    color: white;
+}
+
+article {
+    margin-top: 20px;
+}
+
+.row {
+    margin: 15px;
+}
