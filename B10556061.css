@@ -7,7 +7,7 @@ body {
 nav {
     position: sticky;
     top: 0;
-    width: 100%;
+    /*width: 100%;*/
     background-color: gray;
     /*opacity: 0.5;*/
     text-align: center;
@@ -25,12 +25,23 @@ li {
     line-height: 4em;
     font-weight: bolder;
     display: inline-block;
-    margin: auto;
+    margin: 0;
     font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    overflow: hidden;
+    padding: 0px;
+}
+
+a {
+    margin-left: 0px;
+    margin-right: 0;
+    padding: 0px;
 }
 
 .linklist {
     font-family: 'Roboto Condensed', sans-serif;
+    overflow: hidden;
 }
 
 a:link {
@@ -39,20 +50,61 @@ a:link {
 
 
 /*a:hover {
-    color: white;
+    color: rgb(179, 13, 13) !important;
+}
+
+li:hover {
+    background-color: #aca9a9;
 }*/
 
-.roseki a:hover {
-    color: white;
-    content: 'ROSEKI';
+.page {
+    /*text-decoration: underline;
+    text-decoration-color: red;
+    text-decoration-style: dashed;*/
+    background-color: orangered;
 }
 
 a:visited {
     color: white;
 }
 
-a:active {
-    color: white;
+.my_nav {
+    transition: all 500ms ease-in-out;
+}
+
+.my_nav:hover {
+    background-color: orangered;
+}
+
+.old-text,
+.new-text {
+    display: block;
+    overflow: hidden;
+    transition: all 500ms ease-in-out;
+}
+
+.old-text {
+    height: auto;
+    opacity: 1;
+    width: auto;
+}
+
+.new-text {
+    height: 0;
+    opacity: 0;
+    width: 0;
+}
+
+.my_nav:hover .old-text {
+    height: 0;
+    opacity: 0;
+    width: 0;
+}
+
+.my_nav:hover .new-text {
+    height: auto;
+    opacity: 1;
+    width: auto;
 }
 
 article {
@@ -63,6 +115,44 @@ article {
     margin: 15px;
 }
 
-h1 {
+.title {
     font-family: 'Caveat Brush', cursive;
+    text-align: center;
+    font-size: 60px;
+    border-bottom: solid red 1px;
+    width: 80%;
+    margin: auto;
+    transition: all 500ms ease-in-out;
+}
+
+.old-h1,
+.new-h1 {
+    display: block;
+    overflow: hidden;
+    transition: all 500ms ease-in-out;
+}
+
+.old-h1 {
+    height: auto;
+    opacity: 1;
+    width: auto;
+}
+
+.new-h1 {
+    font-family: 'Courier New', Courier, monospace;
+    height: 0;
+    opacity: 0;
+    width: 0;
+}
+
+.title:hover .old-h1 {
+    height: 0;
+    opacity: 0;
+    width: 0;
+}
+
+.title:hover .new-h1 {
+    height: auto;
+    opacity: 1;
+    width: auto;
 }
