@@ -1,3 +1,8 @@
+@font-face {
+    font-family: HanyiSentyChalk;
+    src: url(HanyiSentyChalk2018.ttf);
+}
+
 body {
     background-color: #f0eeee;
     /*background-image: url(https://i.imgur.com/e5JV6xm.gif);
@@ -22,20 +27,16 @@ li {
     text-align: center;
     /*width: 200px;*/
     list-style: none;
-    line-height: 4em;
+    line-height: 3em;
     font-weight: bolder;
     display: inline-block;
-    margin: 0;
-    font-size: 20px;
+    margin-top: 6px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 15px;
     text-transform: uppercase;
     letter-spacing: 1px;
     overflow: hidden;
-    padding: 0px;
-}
-
-a {
-    margin-left: 0px;
-    margin-right: 0;
     padding: 0px;
 }
 
@@ -155,4 +156,13 @@ article {
     height: auto;
     opacity: 1;
     width: auto;
+}
+
+h1 {
+    font-size: 45px;
+}
+
+.new-h1 {
+    font-family: 'HanyiSentyChalk', sans-serif;
+    font-weight: bold;
 }
