@@ -3,6 +3,11 @@
     src: url(HanyiSentyChalk2018.ttf);
 }
 
+@font-face {
+    font-family: courbd;
+    src: url(courbd.ttf);
+}
+
 body {
     background-color: #f0eeee;
     /*background-image: url(https://i.imgur.com/e5JV6xm.gif);
@@ -34,6 +39,7 @@ li {
     margin-left: 10px;
     margin-right: 10px;
     font-size: 15px;
+    font-size: 0.01vw;
     text-transform: uppercase;
     letter-spacing: 1px;
     overflow: hidden;
@@ -109,20 +115,28 @@ a:visited {
 }
 
 article {
-    margin-top: 20px;
+    background-color: white;
+    border-radius: 40px;
+    width: 85%;
+    margin: auto;
+    margin-top: 40px;
+    padding: 20px;
+    box-shadow: 10px 10px 10px #888888;
 }
 
-.row {
-    margin: 15px;
+.content {
+    border: dashed #8b4513 2px;
+    border-radius: 27px;
+    margin: auto;
 }
 
 .title {
-    font-family: 'Caveat Brush', cursive;
     text-align: center;
     font-size: 60px;
     border-bottom: solid red 1px;
-    width: 80%;
+    width: 90%;
     margin: auto;
+    margin-top: 20px;
     transition: all 500ms ease-in-out;
 }
 
@@ -134,6 +148,8 @@ article {
 }
 
 .old-h1 {
+    font-family: 'HanyiSentyChalk', sans-serif;
+    font-weight: bold;
     height: auto;
     opacity: 1;
     width: auto;
@@ -163,6 +179,16 @@ h1 {
 }
 
 .new-h1 {
-    font-family: 'HanyiSentyChalk', sans-serif;
-    font-weight: bold;
+    font-family: 'Caveat Brush', cursive;
+}
+
+#footer {
+    font-family: courbd;
+    font-size: 5px;
+    background-color: #b3b0b0;
+    height: 60px;
+    text-align: center;
+    margin: auto;
+    margin-top: 40px;
+    padding: 20px 0;
 }
