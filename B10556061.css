@@ -1,11 +1,11 @@
 @font-face {
     font-family: HanyiSentyChalk;
-    src: url(HanyiSentyChalk2018.ttf);
+    src: url(font/HanyiSentyChalk2018.ttf);
 }
 
 @font-face {
     font-family: courbd;
-    src: url(courbd.ttf);
+    src: url(font/courbd.ttf);
 }
 
 body {
@@ -15,11 +15,10 @@ body {
 }
 
 nav {
-    position: sticky;
+    /*position: sticky;*/
     top: 0;
     /*width: 100%;*/
     background-color: gray;
-    /*opacity: 0.5;*/
     text-align: center;
 }
 
@@ -128,6 +127,7 @@ article {
     border: dashed #8b4513 2px;
     border-radius: 27px;
     margin: auto;
+    padding-bottom: 20px;
 }
 
 .title {
@@ -180,6 +180,32 @@ h1 {
 
 .new-h1 {
     font-family: 'Caveat Brush', cursive;
+}
+
+.essay {
+    width: 90%;
+    margin: auto;
+}
+
+.rosekiposter {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.row {
+    /*margin-top: 25px;*/
+    border-bottom: solid orange 1px;
+}
+
+.crew,
+.cast {
+    color: rgb(148, 32, 32);
+    padding-bottom: 10px;
+    margin-top: 15px;
+}
+
+.strong {
+    font-weight: bold;
 }
 
 #footer {
