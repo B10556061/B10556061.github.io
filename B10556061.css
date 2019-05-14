@@ -134,7 +134,7 @@ article {
 .title {
     text-align: center;
     font-size: 60px;
-    border-bottom: solid red 1px;
+    border-bottom: solid #b50f0f 1px;
     width: 90%;
     margin: auto;
     margin-top: 20px;
@@ -196,11 +196,11 @@ h1 {
 .row,
 .plot {
     /*margin-top: 25px;*/
-    border-bottom: solid orange 1px;
+    border-bottom: solid #b50f0f 1px;
 }
 
 h3 {
-    color: rgb(148, 32, 32);
+    color: #b50f0f;
     padding-bottom: 10px;
     margin-top: 15px;
 }
