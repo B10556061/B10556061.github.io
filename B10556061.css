@@ -14,6 +14,15 @@ body {
     background-size: 100%;*/
 }
 
+.reason {
+    margin-top: 20px;
+}
+
+.logoimg {
+    text-align: center;
+    display: block;
+}
+
 nav {
     position: sticky;
     top: 0;
@@ -237,6 +246,10 @@ a:visited {
 
 .thohhprod::before {
     content: '　　　　　';
+}
+
+.en {
+    font-style: italic;
 }
 
 #footer {
