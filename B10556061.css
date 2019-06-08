@@ -196,9 +196,10 @@ article {
     width: auto;
 }
 
-h1 {
+
+/*h1 {
     font-size: 45px;
-}
+}*/
 
 .new-h1 {
     font-family: 'Caveat Brush', cursive;
@@ -264,8 +265,90 @@ a:visited {
     font-style: italic;
 }
 
+#comments {
+    background-color: #fcf9f4;
+    border-radius: 40px;
+    width: 85%;
+    margin: auto;
+    margin-top: 40px;
+    padding: 20px;
+    box-shadow: 10px 10px 10px #888888;
+}
+
+.part2 {
+    border: dashed darkgoldenrod 2px;
+    border-radius: 27px;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+.title2 {
+    text-align: center;
+    font-size: 40px;
+    border-bottom: solid orange 1px;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    transition: all 500ms ease-in-out;
+}
+
+.old-h2,
+.new-h2 {
+    display: block;
+    overflow: hidden;
+    transition: all 500ms ease-in-out;
+}
+
+.old-h2 {
+    font-family: 'HanyiSentyChalk', sans-serif;
+    font-weight: bold;
+    height: auto;
+    opacity: 1;
+    width: auto;
+}
+
+.new-h2 {
+    font-family: 'Caveat Brush', cursive;
+    height: 0;
+    opacity: 0;
+    width: 0;
+}
+
+.title2:hover .old-h2 {
+    height: 0;
+    opacity: 0;
+    width: 0;
+}
+
+.title2:hover .new-h2 {
+    height: auto;
+    opacity: 1;
+    width: auto;
+}
+
+.com2 {
+    margin-top: 10px;
+    text-align: center;
+}
+
+textarea {
+    border: none;
+    border: solid 1px #ccc;
+    border-radius: 10px;
+    width: 83%
+}
+
+.button {
+    border-radius: 10px;
+    background-color: rgb(240, 239, 239);
+}
+
+.button:hover {
+    background-color: rgb(218, 216, 216);
+}
+
 #footer {
-    font-family: courbd;
+    font-family: 'courbd';
     font-size: 5px;
     background-color: #b3b0b0;
     height: 60px;
