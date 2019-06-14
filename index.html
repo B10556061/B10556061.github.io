@@ -56,20 +56,55 @@
                 <h2 class="com old-h2">留言</h2>
                 <h2 class="com new-h2">Comments</h2>
             </div>
-            <div class="form">
-                <div class="com2 form-row form-group form-inline justify-content-center">
-                    <label for="email" class="col-form-label">電子郵件：</label><input type="email" name="email" class="form-control col-6" required="required">
+            <script type="text/javascript">
+                function getwords() {
+                    email1 = email.value;
+                    un = uname.value;
+                    text = words.value;
+                    document.getElementById("review").innerHTML += '<div class="block"><small>' + email1 + '</small><br><b>' + un + '</b><br>' + text + '</div>'
+                        /*document.getElementById("words").value = "enter"*/
+                }
+            </script>
+            <!-- <form class="row">
+                <div class="form">
+                    <div id="review"></div>
+                    <div class="com2 form-row form-group form-inline justify-content-center">
+                        <label for="email" class="col-form-label">電子郵件：</label><input type="email" name="email" class="form-control col-6" required="required"><br>
+                    </div>
+                    <div class="com2 form-row form-group form-inline justify-content-center">
+                        <label for="uname" class="col-form-label">暱　　稱：</label><input type="text" name="uname" class="form-control col-6" required="required"><br>
+                    </div>
+                    <div class="com2">
+                        <textarea rows="8" wrap="virtual" placeholder="留言" required="required"></textarea><br>
+                        <input type="submit" value="送出" class="button" onclick="getwords()">
+                    </div>
                 </div>
-                <div class="com2 form-row form-group form-inline justify-content-center">
-                    <label for="uname" class="col-form-label">暱　　稱：</label><input type="text" name="uname" class="form-control col-6" required="required"><br>
-                </div>
-                <div class="com2">
-                    <textarea rows="8" wrap="virtual" placeholder="留言" required="required"></textarea><br>
-                    <input type="submit" value="送出" class="button">
-                </div>
+            </form>-->
+            <div id="review">
             </div>
+
+            <form class="com2">
+                <label for="email" class="col-form-label">電子郵件：</label><input type="email" id="email" name="email" size="60%" required="required"><br>
+                <label for="uname" class="col-form-label">暱　　稱：</label><input type="text" id="uname" name="uname" size="60%" required="required"><br>
+                <textarea rows="8" wrap="virtual" placeholder="留言" required="required" id="words"></textarea><br>
+                <input type="button" value="送出" class="button" onclick="getwords()">
+            </form>
         </div>
     </div>
+
+    <!--<form>
+        <textarea id="words" rows="10" cols="20">Enter comment</textarea>
+        <input type="button" onclick="getwords()" value="Enter" /> <br>
+        <p id="para"></p>
+    </form>
+
+    <script type="text/javascript">
+        function getwords() {
+            text = words.value;
+            document.getElementById("para").innerHTML += '<p>' + text
+                /*document.getElementById("words").value = "enter"*/
+        }
+    </script>-->
 
     <div id="footer">
         <address>

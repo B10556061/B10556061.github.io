@@ -215,7 +215,7 @@ article {
     margin-top: 25px;
 }
 
-.row,
+.row1,
 .plot {
     /*margin-top: 25px;*/
     border-bottom: solid #b50f0f 1px;
@@ -338,6 +338,12 @@ textarea {
     width: 83%
 }
 
+input {
+    border: none;
+    border: solid 1px #ccc;
+    border-radius: 10px;
+}
+
 .button {
     border-radius: 10px;
     background-color: rgb(240, 239, 239);
@@ -345,6 +351,27 @@ textarea {
 
 .button:hover {
     background-color: rgb(218, 216, 216);
+}
+
+#review {
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+}
+
+.block {
+    border-bottom: solid gray 1px;
+    width: 100%;
+    padding: 10px;
+}
+
+.em1 {
+    text-align: right;
+    font-size: small;
+}
+
+.un1 {
+    font-weight: bold;
 }
 
 #footer {
