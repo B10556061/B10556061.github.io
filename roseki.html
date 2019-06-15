@@ -109,18 +109,27 @@
                 <h2 class="com old-h2">留言</h2>
                 <h2 class="com new-h2">Comments</h2>
             </div>
-            <div class="form">
-                <div class="com2 form-row form-group form-inline justify-content-center">
-                    <label for="email" class="col-form-label">電子郵件：</label><input type="email" name="email" class="form-control col-6" required="required">
-                </div>
-                <div class="com2 form-row form-group form-inline justify-content-center">
-                    <label for="uname" class="col-form-label">暱　　稱：</label><input type="text" name="uname" class="form-control col-6" required="required"><br>
-                </div>
-                <div class="com2">
-                    <textarea rows="8" wrap="virtual" placeholder="留言" required="required"></textarea><br>
-                    <input type="submit" value="送出" class="button">
-                </div>
+            <script type="text/javascript">
+                function getwords() {
+                    email1 = email.value;
+                    un = uname.value;
+                    text = words.value;
+                    document.getElementById("review").innerHTML += '<div class="block"><span style="background-color:lightsalmon"><small>' + email1 + '</small></span><br><span style="color:purple"><b>' + un + '說：</b></span><br><hr>' + text + '</div>'
+                        /*document.getElementById("words").value = "enter"*/
+                }
+            </script>
+            <div id="review">
+                <p id="em2"></p>
+                <p id="un2"></p>
+                <p id="text2"></p>
             </div>
+
+            <form class="com2">
+                <label for="email" class="col-form-label">電子郵件：</label><input type="email" id="email" name="email" class="col-6" required="required"><br>
+                <label for="uname" class="col-form-label">暱　　稱：</label><input type="text" id="uname" name="uname" class="col-6" required="required"><br>
+                <textarea rows="8" wrap="virtual" placeholder="留言" required="required" id="words"></textarea><br>
+                <input type="button" value="送出" class="button" onclick="getwords()">
+            </form>
         </div>
     </div>
 

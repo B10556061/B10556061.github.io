@@ -360,18 +360,9 @@ input {
 }
 
 .block {
-    border-bottom: solid gray 1px;
+    border-bottom: solid lightcoral 1px;
     width: 100%;
     padding: 10px;
-}
-
-.em1 {
-    text-align: right;
-    font-size: small;
-}
-
-.un1 {
-    font-weight: bold;
 }
 
 #footer {
